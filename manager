@@ -1,0 +1,13 @@
+import os
+
+filename = "note.txt"
+
+# 1. Use 'echo' to create/write to the file
+os.system(f"echo 'Initial text from Bash' > {filename}")
+
+# 2. Use 'echo' with '>>' to append a second line
+os.system(f"echo 'Appending a second line' >> {filename}")
+
+# 3. Use 'cat' to display the result in the terminal
+print("--- File Content ---")
+os.system(f"cat {filename}")
